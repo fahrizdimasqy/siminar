@@ -2,7 +2,40 @@
 
 @section('content')
 <div class="container">
-    @include('components/backend.menu')
+    
+<div class="row">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header text-white bg-primary">
+            <h4>Pengguna</h4>
+            </div>
+            <div class="card-body  text-white bg-primary">
+                <div class="d-flex">
+                    <i class="fa fa-users mr-3" style="font-size: 4em;"></i> <h3>{{$countuser}}</h3>
+                </div>
+            </div>
+            <div class="card-footer">
+                <a href="{{route('user')}}">Kunjungi Halaman data user</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header text-white bg-warning">
+            <h5>Event</h5>
+            </div>
+            <div class="card-body text-white bg-warning">
+                <div class="d-flex">
+                 <i class="fa fa-calendar-week mr-3" style="font-size: 4em;"></i> <h3>{{$countevent}}</h3>
+                </div>
+            </div>
+            </div>
+            <div class="card-footer">
+                <a href="{{route('event')}}">Kunjungi Halaman data event</a>
+            </div>
+        </div>
+    </div>
+</div>
 </div>
    
 @endsection

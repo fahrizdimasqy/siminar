@@ -6,11 +6,11 @@
             </div>
             <div class="card-body  text-white bg-primary">
                 <div class="d-flex">
-                    <i class="fa fa-users mr-3" style="font-size: 4em;"></i> <h3> 25 </h3>
+                    <i class="fa fa-users mr-3" style="font-size: 4em;"></i> <h3></h3>
                 </div>
             </div>
             <div class="card-footer">
-                <a href="">Kunjungi Halaman data user</a>
+                <a href="{{route('user')}}">Kunjungi Halaman data user</a>
             </div>
         </div>
     </div>

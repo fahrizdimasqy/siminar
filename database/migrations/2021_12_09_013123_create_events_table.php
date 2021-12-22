@@ -17,9 +17,10 @@ class CreateEventsTable extends Migration
             $table->bigIncrements('id');
             $table->string('title');
             $table->text("desc");
-            $table->date("event date");
+            $table->date("event_date");
             $table->string("link_zoom");
-            $table->timestamps();
+            $table->string("image");
+            // $table->timestamps();
         });
     }
 

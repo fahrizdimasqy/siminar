@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Event; 
+use Illuminate\Support\Facades\DB;
 
 class AdminController extends Controller
 {
@@ -14,7 +16,11 @@ class AdminController extends Controller
     public function index()
     {
         //
-        return view('backend/admin'); 
+        $countevent = Event::all()->count();
+
+        // return view('backend/admin', compact('events'));
+        $countuser = DB::table('users')->count();
+        return view('backend/admin', compact('countevent','countuser'));
     }
 
     /**
@@ -22,9 +28,14 @@ class AdminController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function showDataUser()
     {
         //
+        $users = DB::table('users')
+        ->join('events', 'users.id_event', '=', 'events.id')
+        ->select('users.*', 'events.*')
+        ->get();
+    return view('backend/user', compact('users'));
     }
 
     /**
