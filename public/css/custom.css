@@ -1,0 +1,68 @@
+html,
+body {
+    height: 100%;
+    background-color: #ddd !important;
+}
+
+.global-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #20b2aa;
+}
+
+.login-form {
+    width: 380px;
+    height: 550px;
+    padding: 20px;
+    background-color: #222d32 !important;
+    border-radius: 10px !important;
+}
+
+input[type="email"],
+input[type="password"] {
+    background: #87cefa;
+    color: #fff;
+    border: 2px solid #4169e1;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    border: none;
+    background: #20b2aa;
+    color: #fff;
+    margin: 0;
+}
+
+.card-title {
+    font-weight: 900;
+    padding-top: 20px;
+}
+
+.btn {
+    background: #87ceeb !important;
+    color: #191970 !important;
+    transform: translateY(10px);
+    font-size: 14px;
+    border-radius: 10px !important;
+    font-weight: 700;
+}
+
+.link {
+    color: #00fa9a;
+    text-decoration: none;
+}
+
+.link:hover {
+    color: #00fa9a;
+    text-decoration: none;
+}
+
+.img {
+    height: 18px;
+    width: 18spx;
+}
